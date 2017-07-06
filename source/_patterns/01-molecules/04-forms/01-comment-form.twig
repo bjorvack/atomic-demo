@@ -1,20 +1,21 @@
 <form method="post" action="{{ url }}" class="comment-form">
 	<fieldset>
-		<div class="field-container">
+		<div class="form-group">
 			<label for="comment-name">Name</label>
-			<input id="comment-name" type="text" placeholder="Enter Your Name" />
+			<input id="comment-name" class="form-control" type="text" placeholder="Enter Your Name" />
 		</div>
-		<div class="field-container">
+		<div class="form-group">
 			<label for="comment-email">Email</label>
-			<input id="comment-email" type="email" placeholder="Your email address" />
+			<input id="comment-email" class="form-control" type="email" placeholder="Your email address" />
 		</div>
-		<div class="field-container">
+		<div class="form-group">
 			<label for="comment-url">URL</label>
-			<input id="comment-url" type="url" placeholder="Website if you got one" />
+			<input id="comment-url" class="form-control" type="url" placeholder="Website if you got one" />
 		</div>
-		<div class="field-container">
+		<div class="form-group">
 			<label for="comment-field">Comment</label>
-			<textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
+			<textarea id="comment-field" class="form-control" rows="5" placeholder="Write you comment here"></textarea>
 		</div>
+		<input type="submit" class="btn btn-primary" value="Submit">
 	</fieldset>
 </form>
